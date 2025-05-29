@@ -45,8 +45,8 @@
   "images/4_of_spades.png", "images/4_of_clubs.png", "images/4_of_diamonds.png", "images/4_of_hearts.png",
   "images/3_of_spades.png", "images/3_of_clubs.png", "images/3_of_diamonds.png", "images/3_of_hearts.png", 
   "images/2_of_spades.png", "images/2_of_clubs.png", "images/2_of_diamonds.png", "images/2_of_hearts.png", 
-  ];
-    var shuffleddeck = [];
+     ];
+    var shuffledDeck = [];
     function shuffle(){
       for(var i = 0; i < 52; i++){
       var randomInteger = Math.floor(Math.random() * deck.length);
@@ -58,7 +58,7 @@
     }
     function deal(){
       for (var i = 0; i <52; i++){
-      var myImage = new Image ();
+      var myImage = new Image();
       myImage.src = shuffledDeck[0];
       var table = document.getElementById("myTable");
       table.appendChild(myImage);
